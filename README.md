@@ -1,20 +1,5 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+This Docker container provisions the basics needed for Identity Server locally. Use it as part of the instructions at [the wiki](https://dev.azure.com/nightingalehq/Nightingale/_wiki/wikis/Nightingale.wiki/2/Running-the-ID-solution-locally)
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Run with `docker run -e ACCEPT_EULA=Y -e SA_PASSWORD=<password>  <imagename>`
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
-
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+The nightingale login will be `NightingaleId` and `NotForPr0duction!!` 
