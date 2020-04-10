@@ -1,6 +1,7 @@
-/opt/mssql/bin/sqlservr
-#wait for the SQL Server to come up
-sleep 90s
+#!/bin/bash
 
-#run the setup script to create the DB and the schema in the DB
-/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -d master -i idserver.sql
+# Start the script to create the DB and user
+/usr/config/executesql.sh &
+
+# Start SQL Server
+/opt/mssql/bin/sqlservr
